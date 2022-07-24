@@ -1,0 +1,181 @@
+:root {
+    --primary-color: #0f4d5c85 ;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Oleo Script Swash Caps, cursive;
+    color: #001219;
+    line-height: 1.6;
+    background-color: #0f4c5c;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #001219;
+}
+h1,h2 {
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 10px 5px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* navbar */
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    font-size: 17px;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    padding: 12px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 3px #0a9396 solid;
+    
+}
+
+.navbar a.active {
+    border-bottom: 3px #0a9396 solid;
+}
+
+.navbar {
+    background-color: var(--primary-color) ;
+    color: white;
+    height: 60px;
+}
+
+/* bookings */
+.showcase-form {
+    position: relative;
+    top: 60px;
+    height: 500px;
+    background-color: #fff;
+    width: 600px;
+    margin: auto;
+    padding: 40px;
+    z-index: 100;
+}
+
+.showcase-form .form-control {
+    margin: 30px 0;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
+    border: 0;
+    border-bottom: 1px solid #cad2c5;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px; 
+    font-family: Oleo Script Swash Caps, cursive;
+}
+
+.showcase-form input:focus {
+    outline: none;
+}
+
+.showcase-form h2 {
+    color: #111010;
+    font-size: 40px;
+}
+
+.card {
+    background-color: #fff;
+    color: #111010;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: #001219;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.btn:hover {
+    transform: scale(0.93);
+}
+
+/* utilities */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 30px;
+}
+
+.container .logo {
+    font-family: Dancing Script, cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* footer */
+.footer-height {
+    height: 60vh;
+    background-color: #000000b9;
+}
+
+.footer-style {
+    color: #fff;
+    padding:5px 15px;
+    display: grid;
+}
+
+.footer-style p:nth-of-type(odd) {
+    font-size: 20px;
+}
+.footer-style p:nth-of-type(even) {
+    font-size: 10px;
+}

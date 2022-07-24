@@ -1,0 +1,161 @@
+ :root {
+    --primary-color: #0f4d5c85 ;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Oleo Script Swash Caps, cursive;
+    color: #001219;
+    line-height: 1.6;
+    background-color: #0f4c5c;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #001219;
+}
+h1,h2 {
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 10px 5px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* navbar */
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    font-size: 17px;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    padding: 12px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 3px #0a9396 solid;
+    
+}
+
+.navbar a.active {
+    border-bottom: 3px #0a9396 solid;
+}
+
+.navbar {
+    background-color: var(--primary-color) ;
+    color: white;
+    height: 60px;
+}
+
+/* utilities */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 30px;
+}
+.container .logo {
+    font-family: Dancing Script, cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* rating */
+.rating {
+    border-bottom: #fff 2px solid;
+    font-size: 2em;
+    text-align: center;
+    color: #ee9b00;
+}
+
+.heading h1 {
+    border-top: #fff 2px solid;
+    padding-top: 10px;
+    font-family: Dancing Script, cursive;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+/* about us */
+.about {
+    background-image: url(images/Img-1-about.jpg);
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    border-radius: 50% 20% / 10% 20%;
+    box-shadow: 10px 5px 5px #000000;
+    padding: 0 30px;
+}
+.about h1 {
+    font-size: 1.5em;
+   margin: 30px 0;
+}
+
+.about p {
+    font-size: 18px;
+    font-weight: 500;
+}
+/* footer */
+.footer-height {
+    height: 40vh;
+    background-color: #000000b9;
+}
+
+.footer-style {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5rem;
+}
+
+.footer-style p:nth-of-type(odd) {
+    font-size: 20px;
+}
+.footer-style p:nth-of-type(even) {
+    font-size: 10px;
+}
